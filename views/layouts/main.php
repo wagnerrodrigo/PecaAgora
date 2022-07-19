@@ -29,7 +29,7 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         'brandLabel' =>Html::img('@web/assets/pecaagora_padrao.png', ['alt'=> Yii::$app->name]) ,
-        'brandUrl' => Yii::$app->homeUrl,
+        'brandUrl' => '/funcionarios/index',
         'options' => [
             'class' => 'navbar navbar-expand-md navbar-dark bg-dark fixed-top',
         ],
@@ -38,7 +38,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav'],
         'items' => [
             ['label' => 'Funcionarios', 'url' => ['/funcionarios/index']],
-            ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'Home', 'url' => ['/site/index']], 
         ],
     ]);
     NavBar::end();
